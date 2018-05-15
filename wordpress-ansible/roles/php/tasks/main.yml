@@ -1,0 +1,8 @@
+---
+# tasks file for php
+- name: install php 
+  apt: name={{ item }} state=latest
+  sudo: yes
+  with_items:
+    - php7.0-gd
+    - python-libssh2

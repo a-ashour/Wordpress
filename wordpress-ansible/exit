@@ -1,0 +1,2184 @@
+-- Logs begin at wo 2018-05-02 12:01:26 CEST, end at wo 2018-05-02 15:02:38 CEST. --
+mei 02 12:01:26 VM1 kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+mei 02 12:01:26 VM1 kernel: kvm-clock: cpu 0, msr 1:19f53001, primary cpu clock
+mei 02 12:01:26 VM1 kernel: kvm-clock: using sched offset of 5907420452 cycles
+mei 02 12:01:26 VM1 kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+mei 02 12:01:26 VM1 kernel: Zone ranges:
+mei 02 12:01:26 VM1 kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+mei 02 12:01:26 VM1 kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+mei 02 12:01:26 VM1 kernel:   Normal   [mem 0x0000000100000000-0x0000000119ffffff]
+mei 02 12:01:26 VM1 kernel:   Device   empty
+mei 02 12:01:26 VM1 kernel: Movable zone start for each node
+mei 02 12:01:26 VM1 kernel: Early memory node ranges
+mei 02 12:01:26 VM1 kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+mei 02 12:01:26 VM1 kernel:   node   0: [mem 0x0000000000100000-0x00000000dffeffff]
+mei 02 12:01:26 VM1 kernel:   node   0: [mem 0x0000000100000000-0x0000000119ffffff]
+mei 02 12:01:26 VM1 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x0000000119ffffff]
+mei 02 12:01:26 VM1 kernel: On node 0 totalpages: 1023886
+mei 02 12:01:26 VM1 kernel:   DMA zone: 64 pages used for memmap
+mei 02 12:01:26 VM1 kernel:   DMA zone: 21 pages reserved
+mei 02 12:01:26 VM1 kernel:   DMA zone: 3998 pages, LIFO batch:0
+mei 02 12:01:26 VM1 kernel:   DMA32 zone: 14272 pages used for memmap
+mei 02 12:01:26 VM1 kernel:   DMA32 zone: 913392 pages, LIFO batch:31
+mei 02 12:01:26 VM1 kernel:   Normal zone: 1664 pages used for memmap
+mei 02 12:01:26 VM1 kernel:   Normal zone: 106496 pages, LIFO batch:31
+mei 02 12:01:26 VM1 kernel: ACPI: PM-Timer IO Port: 0x4008
+mei 02 12:01:26 VM1 kernel: ACPI: Local APIC address 0xfee00000
+mei 02 12:01:26 VM1 kernel: IOAPIC[0]: apic_id 1, version 32, address 0xfec00000, GSI 0-23
+mei 02 12:01:26 VM1 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+mei 02 12:01:26 VM1 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+mei 02 12:01:26 VM1 kernel: ACPI: IRQ0 used by override.
+mei 02 12:01:26 VM1 kernel: ACPI: IRQ9 used by override.
+mei 02 12:01:26 VM1 kernel: Using ACPI (MADT) for SMP configuration information
+mei 02 12:01:26 VM1 kernel: smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+mei 02 12:01:26 VM1 kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+mei 02 12:01:26 VM1 kernel: PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+mei 02 12:01:26 VM1 kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+mei 02 12:01:26 VM1 kernel: PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+mei 02 12:01:26 VM1 kernel: PM: Registered nosave memory: [mem 0xdfff0000-0xdfffffff]
+mei 02 12:01:26 VM1 kernel: PM: Registered nosave memory: [mem 0xe0000000-0xfebfffff]
+mei 02 12:01:26 VM1 kernel: PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+mei 02 12:01:26 VM1 kernel: PM: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+mei 02 12:01:26 VM1 kernel: PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+mei 02 12:01:26 VM1 kernel: PM: Registered nosave memory: [mem 0xfee01000-0xfffbffff]
+mei 02 12:01:26 VM1 kernel: PM: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+mei 02 12:01:26 VM1 kernel: e820: [mem 0xe0000000-0xfebfffff] available for PCI devices
+mei 02 12:01:26 VM1 kernel: Booting paravirtualized kernel on KVM
+mei 02 12:01:26 VM1 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+mei 02 12:01:26 VM1 kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:1 nr_cpu_ids:1 nr_node_ids:1
+mei 02 12:01:26 VM1 kernel: percpu: Embedded 45 pages/cpu @ffff9b9bd9c00000 s146584 r8192 d29544 u2097152
+mei 02 12:01:26 VM1 kernel: pcpu-alloc: s146584 r8192 d29544 u2097152 alloc=1*2097152
+mei 02 12:01:26 VM1 kernel: pcpu-alloc: [0] 0 
+mei 02 12:01:26 VM1 kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+mei 02 12:01:26 VM1 kernel: Built 1 zonelists in Node order, mobility grouping on.  Total pages: 1007865
+mei 02 12:01:26 VM1 kernel: Policy zone: Normal
+mei 02 12:01:26 VM1 kernel: [0;1;39mKernel command line: BOOT_IMAGE=/boot/vmlinuz-4.13.0-39-generic root=UUID=ef5160f8-989f-4251-86b6-4b35bdb041ff ro quiet splash[0m
+mei 02 12:01:26 VM1 kernel: PID hash table entries: 4096 (order: 3, 32768 bytes)
+mei 02 12:01:26 VM1 kernel: Calgary: detecting Calgary via BIOS EBDA area
+mei 02 12:01:26 VM1 kernel: Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+mei 02 12:01:26 VM1 kernel: Memory: 3888960K/4095544K available (12300K kernel code, 2481K rwdata, 4008K rodata, 2368K init, 2372K bss, 206584K reserved, 0K cma-reserved)
+mei 02 12:01:26 VM1 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+mei 02 12:01:26 VM1 kernel: Kernel/User page tables isolation: enabled
+mei 02 12:01:26 VM1 kernel: ftrace: allocating 37858 entries in 148 pages
+mei 02 12:01:26 VM1 kernel: Hierarchical RCU implementation.
+mei 02 12:01:26 VM1 kernel:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=1.
+mei 02 12:01:26 VM1 kernel:         Tasks RCU enabled.
+mei 02 12:01:26 VM1 kernel: RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+mei 02 12:01:26 VM1 kernel: NR_IRQS: 524544, nr_irqs: 256, preallocated irqs: 16
+mei 02 12:01:26 VM1 kernel: Console: colour VGA+ 80x25
+mei 02 12:01:26 VM1 kernel: console [tty0] enabled
+mei 02 12:01:26 VM1 kernel: tsc: Detected 2711.996 MHz processor
+mei 02 12:01:26 VM1 kernel: Calibrating delay loop (skipped) preset value.. 5423.99 BogoMIPS (lpj=10847984)
+mei 02 12:01:26 VM1 kernel: pid_max: default: 32768 minimum: 301
+mei 02 12:01:26 VM1 kernel: ACPI: Core revision 20170531
+mei 02 12:01:26 VM1 kernel: ACPI: 2 ACPI AML tables successfully acquired and loaded
+mei 02 12:01:26 VM1 kernel: Security Framework initialized
+mei 02 12:01:26 VM1 kernel: Yama: becoming mindful.
+mei 02 12:01:26 VM1 kernel: AppArmor: AppArmor initialized
+mei 02 12:01:26 VM1 kernel: Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+mei 02 12:01:26 VM1 kernel: Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+mei 02 12:01:26 VM1 kernel: Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+mei 02 12:01:26 VM1 kernel: Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+mei 02 12:01:26 VM1 kernel: CPU: Physical Processor ID: 0
+mei 02 12:01:26 VM1 kernel: FEATURE SPEC_CTRL Not Present
+mei 02 12:01:26 VM1 kernel: mce: CPU supports 0 MCE banks
+mei 02 12:01:26 VM1 kernel: process: using mwait in idle threads
+mei 02 12:01:26 VM1 kernel: Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+mei 02 12:01:26 VM1 kernel: Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+mei 02 12:01:26 VM1 kernel: Spectre V2 mitigation: Mitigation: Full generic retpoline
+mei 02 12:01:26 VM1 kernel: Spectre V2 mitigation: Speculation control IBPB not-supported IBRS not-supported
+mei 02 12:01:26 VM1 kernel: Spectre V2 mitigation: Filling RSB on context switch
+mei 02 12:01:26 VM1 kernel: Freeing SMP alternatives memory: 36K
+mei 02 12:01:26 VM1 kernel: smpboot: Max logical packages: 1
+mei 02 12:01:26 VM1 kernel: x2apic enabled
+mei 02 12:01:26 VM1 kernel: Switched APIC routing to physical x2apic.
+mei 02 12:01:26 VM1 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+mei 02 12:01:26 VM1 kernel: smpboot: CPU0: Intel(R) Core(TM) i5-7300U CPU @ 2.60GHz (family: 0x6, model: 0x8e, stepping: 0x9)
+mei 02 12:01:26 VM1 kernel: Performance Events: unsupported p6 CPU model 142 no PMU driver, software events only.
+mei 02 12:01:26 VM1 kernel: Hierarchical SRCU implementation.
+mei 02 12:01:26 VM1 kernel: smp: Bringing up secondary CPUs ...
+mei 02 12:01:26 VM1 kernel: smp: Brought up 1 node, 1 CPU
+mei 02 12:01:26 VM1 kernel: smpboot: Total of 1 processors activated (5423.99 BogoMIPS)
+mei 02 12:01:26 VM1 kernel: devtmpfs: initialized
+mei 02 12:01:26 VM1 kernel: x86/mm: Memory block size: 128MB
+mei 02 12:01:26 VM1 kernel: evm: security.selinux
+mei 02 12:01:26 VM1 kernel: evm: security.SMACK64
+mei 02 12:01:26 VM1 kernel: evm: security.SMACK64EXEC
+mei 02 12:01:26 VM1 kernel: evm: security.SMACK64TRANSMUTE
+mei 02 12:01:26 VM1 kernel: evm: security.SMACK64MMAP
+mei 02 12:01:26 VM1 kernel: evm: security.ima
+mei 02 12:01:26 VM1 kernel: evm: security.capability
+mei 02 12:01:26 VM1 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+mei 02 12:01:26 VM1 kernel: futex hash table entries: 256 (order: 2, 16384 bytes)
+mei 02 12:01:26 VM1 kernel: pinctrl core: initialized pinctrl subsystem
+mei 02 12:01:26 VM1 kernel: RTC time: 10:01:21, date: 05/02/18
+mei 02 12:01:26 VM1 kernel: NET: Registered protocol family 16
+mei 02 12:01:26 VM1 kernel: cpuidle: using governor ladder
+mei 02 12:01:26 VM1 kernel: cpuidle: using governor menu
+mei 02 12:01:26 VM1 kernel: [0;1;39mPCCT header not found.[0m
+mei 02 12:01:26 VM1 kernel: ACPI: bus type PCI registered
+mei 02 12:01:26 VM1 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+mei 02 12:01:26 VM1 kernel: PCI: Using configuration type 1 for base access
+mei 02 12:01:26 VM1 kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+mei 02 12:01:26 VM1 kernel: ACPI: Added _OSI(Module Device)
+mei 02 12:01:26 VM1 kernel: ACPI: Added _OSI(Processor Device)
+mei 02 12:01:26 VM1 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+mei 02 12:01:26 VM1 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+mei 02 12:01:26 VM1 kernel: ACPI: Executed 1 blocks of module-level executable AML code
+mei 02 12:01:26 VM1 kernel: ACPI: Interpreter enabled
+mei 02 12:01:26 VM1 kernel: ACPI: (supports S0 S5)
+mei 02 12:01:26 VM1 kernel: ACPI: Using IOAPIC for interrupt routing
+mei 02 12:01:26 VM1 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+mei 02 12:01:26 VM1 kernel: ACPI: Enabled 2 GPEs in block 00 to 07
+mei 02 12:01:26 VM1 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+mei 02 12:01:26 VM1 kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+mei 02 12:01:26 VM1 kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+mei 02 12:01:26 VM1 kernel: [0;1;39macpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.[0m
+mei 02 12:01:26 VM1 kernel: PCI host bridge to bus 0000:00
+mei 02 12:01:26 VM1 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+mei 02 12:01:26 VM1 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+mei 02 12:01:26 VM1 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+mei 02 12:01:26 VM1 kernel: pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfdffffff window]
+mei 02 12:01:26 VM1 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+mei 02 12:01:26 VM1 kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+mei 02 12:01:26 VM1 kernel: pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+mei 02 12:01:26 VM1 kernel: pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:02.0: [80ee:beef] type 00 class 0x030000
+mei 02 12:01:26 VM1 kernel: pci 0000:00:02.0: reg 0x10: [mem 0xe0000000-0xe0ffffff pref]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+mei 02 12:01:26 VM1 kernel: pci 0000:00:03.0: reg 0x10: [mem 0xf0000000-0xf001ffff]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:03.0: reg 0x18: [io  0xd010-0xd017]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+mei 02 12:01:26 VM1 kernel: pci 0000:00:04.0: reg 0x10: [io  0xd020-0xd03f]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+mei 02 12:01:26 VM1 kernel: pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+mei 02 12:01:26 VM1 kernel: pci 0000:00:06.0: reg 0x10: [mem 0xf0804000-0xf0804fff]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+mei 02 12:01:26 VM1 kernel: pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+mei 02 12:01:26 VM1 kernel: pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+mei 02 12:01:26 VM1 kernel: pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+mei 02 12:01:26 VM1 kernel: pci 0000:00:0d.0: reg 0x10: [io  0xd240-0xd247]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:0d.0: reg 0x14: [io  0xd248-0xd24b]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:0d.0: reg 0x18: [io  0xd250-0xd257]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:0d.0: reg 0x1c: [io  0xd258-0xd25b]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:0d.0: reg 0x20: [io  0xd260-0xd26f]
+mei 02 12:01:26 VM1 kernel: pci 0000:00:0d.0: reg 0x24: [mem 0xf0806000-0xf0807fff]
+mei 02 12:01:26 VM1 kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+mei 02 12:01:26 VM1 kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+mei 02 12:01:26 VM1 kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+mei 02 12:01:26 VM1 kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+mei 02 12:01:26 VM1 kernel: [0;1;39mSCSI subsystem initialized[0m
+mei 02 12:01:26 VM1 kernel: libata version 3.00 loaded.
+mei 02 12:01:26 VM1 kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+mei 02 12:01:26 VM1 kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+mei 02 12:01:26 VM1 kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+mei 02 12:01:26 VM1 kernel: vgaarb: loaded
+mei 02 12:01:26 VM1 kernel: ACPI: bus type USB registered
+mei 02 12:01:26 VM1 kernel: usbcore: registered new interface driver usbfs
+mei 02 12:01:26 VM1 kernel: usbcore: registered new interface driver hub
+mei 02 12:01:26 VM1 kernel: usbcore: registered new device driver usb
+mei 02 12:01:26 VM1 kernel: EDAC MC: Ver: 3.0.0
+mei 02 12:01:26 VM1 kernel: PCI: Using ACPI for IRQ routing
+mei 02 12:01:26 VM1 kernel: PCI: pci_cache_line_size set to 64 bytes
+mei 02 12:01:26 VM1 kernel: e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+mei 02 12:01:26 VM1 kernel: e820: reserve RAM buffer [mem 0xdfff0000-0xdfffffff]
+mei 02 12:01:26 VM1 kernel: e820: reserve RAM buffer [mem 0x11a000000-0x11bffffff]
+mei 02 12:01:26 VM1 kernel: NetLabel: Initializing
+mei 02 12:01:26 VM1 kernel: NetLabel:  domain hash size = 128
+mei 02 12:01:26 VM1 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+mei 02 12:01:26 VM1 kernel: NetLabel:  unlabeled traffic allowed by default
+mei 02 12:01:26 VM1 kernel: clocksource: Switched to clocksource kvm-clock
+mei 02 12:01:26 VM1 kernel: [0;1;39mVFS: Disk quotas dquot_6.6.0[0m
+mei 02 12:01:26 VM1 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+mei 02 12:01:26 VM1 kernel: AppArmor: AppArmor Filesystem Enabled
+mei 02 12:01:26 VM1 kernel: pnp: PnP ACPI init
+mei 02 12:01:26 VM1 kernel: pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+mei 02 12:01:26 VM1 kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0f03 (active)
+mei 02 12:01:26 VM1 kernel: pnp: PnP ACPI: found 2 devices
+mei 02 12:01:26 VM1 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+mei 02 12:01:26 VM1 kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+mei 02 12:01:26 VM1 kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+mei 02 12:01:26 VM1 kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+mei 02 12:01:26 VM1 kernel: pci_bus 0000:00: resource 7 [mem 0xe0000000-0xfdffffff window]
+mei 02 12:01:26 VM1 kernel: NET: Registered protocol family 2
+mei 02 12:01:26 VM1 kernel: TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+mei 02 12:01:26 VM1 kernel: TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+mei 02 12:01:26 VM1 kernel: TCP: Hash tables configured (established 32768 bind 32768)
+mei 02 12:01:26 VM1 kernel: UDP hash table entries: 2048 (order: 4, 65536 bytes)
+mei 02 12:01:26 VM1 kernel: UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+mei 02 12:01:26 VM1 kernel: NET: Registered protocol family 1
+mei 02 12:01:26 VM1 kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+mei 02 12:01:26 VM1 kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+mei 02 12:01:26 VM1 kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+mei 02 12:01:26 VM1 kernel: PCI: CLS 0 bytes, default 64
+mei 02 12:01:26 VM1 kernel: Unpacking initramfs...
+mei 02 12:01:26 VM1 kernel: Freeing initrd memory: 48208K
+mei 02 12:01:26 VM1 kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+mei 02 12:01:26 VM1 kernel: software IO TLB [mem 0xdbff0000-0xdfff0000] (64MB) mapped at [ffff9b9b9bff0000-ffff9b9b9ffeffff]
+mei 02 12:01:26 VM1 kernel: platform rtc_cmos: registered platform RTC device (no PNP device found)
+mei 02 12:01:26 VM1 kernel: Scanning for low memory corruption every 60 seconds
+mei 02 12:01:26 VM1 kernel: audit: initializing netlink subsys (disabled)
+mei 02 12:01:26 VM1 kernel: [0;1;39mInitialise system trusted keyrings[0m
+mei 02 12:01:26 VM1 kernel: [0;1;39mKey type blacklist registered[0m
+mei 02 12:01:26 VM1 kernel: [0;1;39maudit: type=2000 audit(1525255289.416:1): state=initialized audit_enabled=0 res=1[0m
+mei 02 12:01:26 VM1 kernel: workingset: timestamp_bits=36 max_order=20 bucket_order=0
+mei 02 12:01:26 VM1 kernel: zbud: loaded
+mei 02 12:01:26 VM1 kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+mei 02 12:01:26 VM1 kernel: fuse init (API version 7.26)
+mei 02 12:01:26 VM1 kernel: [0;1;39mKey type asymmetric registered[0m
+mei 02 12:01:26 VM1 kernel: [0;1;39mAsymmetric key parser 'x509' registered[0m
+mei 02 12:01:26 VM1 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+mei 02 12:01:26 VM1 kernel: io scheduler noop registered
+mei 02 12:01:26 VM1 kernel: io scheduler deadline registered
+mei 02 12:01:26 VM1 kernel: io scheduler cfq registered (default)
+mei 02 12:01:26 VM1 kernel: ACPI: AC Adapter [AC] (on-line)
+mei 02 12:01:26 VM1 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+mei 02 12:01:26 VM1 kernel: ACPI: Power Button [PWRF]
+mei 02 12:01:26 VM1 kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+mei 02 12:01:26 VM1 kernel: ACPI: Sleep Button [SLPF]
+mei 02 12:01:26 VM1 kernel: GHES: HEST is not enabled!
+mei 02 12:01:26 VM1 kernel: ACPI: Battery Slot [BAT0] (battery present)
+mei 02 12:01:26 VM1 kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+mei 02 12:01:26 VM1 kernel: Linux agpgart interface v0.103
+mei 02 12:01:26 VM1 kernel: loop: module loaded
+mei 02 12:01:26 VM1 kernel: ata_piix 0000:00:01.1: version 2.13
+mei 02 12:01:26 VM1 kernel: scsi host0: ata_piix
+mei 02 12:01:26 VM1 kernel: scsi host1: ata_piix
+mei 02 12:01:26 VM1 kernel: ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+mei 02 12:01:26 VM1 kernel: ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+mei 02 12:01:26 VM1 kernel: libphy: Fixed MDIO Bus: probed
+mei 02 12:01:26 VM1 kernel: tun: Universal TUN/TAP device driver, 1.6
+mei 02 12:01:26 VM1 kernel: PPP generic driver version 2.4.2
+mei 02 12:01:26 VM1 kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+mei 02 12:01:26 VM1 kernel: ehci-pci: EHCI PCI platform driver
+mei 02 12:01:26 VM1 kernel: ehci-platform: EHCI generic platform driver
+mei 02 12:01:26 VM1 kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+mei 02 12:01:26 VM1 kernel: ohci-pci: OHCI PCI platform driver
+mei 02 12:01:26 VM1 kernel: ohci-pci 0000:00:06.0: OHCI PCI host controller
+mei 02 12:01:26 VM1 kernel: ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+mei 02 12:01:26 VM1 kernel: ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+mei 02 12:01:26 VM1 kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0001
+mei 02 12:01:26 VM1 kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+mei 02 12:01:26 VM1 kernel: usb usb1: Product: OHCI PCI host controller
+mei 02 12:01:26 VM1 kernel: usb usb1: Manufacturer: Linux 4.13.0-39-generic ohci_hcd
+mei 02 12:01:26 VM1 kernel: usb usb1: SerialNumber: 0000:00:06.0
+mei 02 12:01:26 VM1 kernel: hub 1-0:1.0: USB hub found
+mei 02 12:01:26 VM1 kernel: hub 1-0:1.0: 12 ports detected
+mei 02 12:01:26 VM1 kernel: ohci-platform: OHCI generic platform driver
+mei 02 12:01:26 VM1 kernel: uhci_hcd: USB Universal Host Controller Interface driver
+mei 02 12:01:26 VM1 kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+mei 02 12:01:26 VM1 kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+mei 02 12:01:26 VM1 kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+mei 02 12:01:26 VM1 kernel: mousedev: PS/2 mouse device common for all mice
+mei 02 12:01:26 VM1 kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+mei 02 12:01:26 VM1 kernel: rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+mei 02 12:01:26 VM1 kernel: rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+mei 02 12:01:26 VM1 kernel: i2c /dev entries driver
+mei 02 12:01:26 VM1 kernel: device-mapper: uevent: version 1.0.3
+mei 02 12:01:26 VM1 kernel: device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
+mei 02 12:01:26 VM1 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+mei 02 12:01:26 VM1 kernel: NET: Registered protocol family 10
+mei 02 12:01:26 VM1 kernel: Segment Routing with IPv6
+mei 02 12:01:26 VM1 kernel: NET: Registered protocol family 17
+mei 02 12:01:26 VM1 kernel: [0;1;39mKey type dns_resolver registered[0m
+mei 02 12:01:26 VM1 kernel: RAS: Correctable Errors collector initialized.
+mei 02 12:01:26 VM1 kernel: sched_clock: Marking stable (1172230509, 0)->(1514754178, -342523669)
+mei 02 12:01:26 VM1 kernel: registered taskstats version 1
+mei 02 12:01:26 VM1 kernel: [0;1;39mLoading compiled-in X.509 certificates[0m
+mei 02 12:01:26 VM1 kernel: [0;1;39mLoaded X.509 cert 'Build time autogenerated kernel key: 7960992d504579530bf240371c576177395d32e2'[0m
+mei 02 12:01:26 VM1 kernel: zswap: loaded using pool lzo/zbud
+mei 02 12:01:26 VM1 kernel: [0;1;39mKey type big_key registered[0m
+mei 02 12:01:26 VM1 kernel: [0;1;39mKey type trusted registered[0m
+mei 02 12:01:26 VM1 kernel: [0;1;39mKey type encrypted registered[0m
+mei 02 12:01:26 VM1 kernel: AppArmor: AppArmor sha1 policy hashing enabled
+mei 02 12:01:26 VM1 kernel: ima: No TPM chip found, activating TPM-bypass! (rc=-19)
+mei 02 12:01:26 VM1 kernel: evm: HMAC attrs: 0x1
+mei 02 12:01:26 VM1 kernel:   Magic number: 2:164:21
+mei 02 12:01:26 VM1 kernel: rtc_cmos rtc_cmos: setting system clock to 2018-05-02 10:01:22 UTC (1525255282)
+mei 02 12:01:26 VM1 kernel: BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+mei 02 12:01:26 VM1 kernel: EDD information not available.
+mei 02 12:01:26 VM1 kernel: PM: Hibernation image not present or could not be loaded.
+mei 02 12:01:26 VM1 kernel: ata2.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+mei 02 12:01:26 VM1 kernel: ata2.00: configured for UDMA/33
+mei 02 12:01:26 VM1 kernel: [0;1;39mscsi 1:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5[0m
+mei 02 12:01:26 VM1 kernel: sr 1:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+mei 02 12:01:26 VM1 kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+mei 02 12:01:26 VM1 kernel: sr 1:0:0:0: Attached scsi CD-ROM sr0
+mei 02 12:01:26 VM1 kernel: [0;1;39msr 1:0:0:0: Attached scsi generic sg0 type 5[0m
+mei 02 12:01:26 VM1 kernel: Freeing unused kernel memory: 2368K
+mei 02 12:01:26 VM1 kernel: Write protecting the kernel read-only data: 18432k
+mei 02 12:01:26 VM1 kernel: Freeing unused kernel memory: 2024K
+mei 02 12:01:26 VM1 kernel: Freeing unused kernel memory: 88K
+mei 02 12:01:26 VM1 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+mei 02 12:01:26 VM1 kernel: x86/mm: Checking user space page tables
+mei 02 12:01:26 VM1 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+mei 02 12:01:26 VM1 kernel: ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+mei 02 12:01:26 VM1 kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input4
+mei 02 12:01:26 VM1 kernel: e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+mei 02 12:01:26 VM1 kernel: e1000: Copyright (c) 1999-2006 Intel Corporation.
+mei 02 12:01:26 VM1 kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+mei 02 12:01:26 VM1 kernel: usb 1-1: new full-speed USB device number 2 using ohci-pci
+mei 02 12:01:26 VM1 kernel: e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:00:d7:86
+mei 02 12:01:26 VM1 kernel: e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+mei 02 12:01:26 VM1 kernel: ahci 0000:00:0d.0: version 3.0
+mei 02 12:01:26 VM1 kernel: ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+mei 02 12:01:26 VM1 kernel: ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+mei 02 12:01:26 VM1 kernel: ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+mei 02 12:01:26 VM1 kernel: e1000 0000:00:03.0 enp0s3: renamed from eth0
+mei 02 12:01:26 VM1 kernel: scsi host2: ahci
+mei 02 12:01:26 VM1 kernel: ata3: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21
+mei 02 12:01:26 VM1 kernel: usb 1-1: New USB device found, idVendor=80ee, idProduct=0021
+mei 02 12:01:26 VM1 kernel: usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+mei 02 12:01:26 VM1 kernel: usb 1-1: Product: USB Tablet
+mei 02 12:01:26 VM1 kernel: usb 1-1: Manufacturer: VirtualBox
+mei 02 12:01:26 VM1 kernel: hidraw: raw HID events driver (C) Jiri Kosina
+mei 02 12:01:26 VM1 kernel: usbcore: registered new interface driver usbhid
+mei 02 12:01:26 VM1 kernel: usbhid: USB HID core driver
+mei 02 12:01:26 VM1 kernel: input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0001/input/input6
+mei 02 12:01:26 VM1 kernel: hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+mei 02 12:01:26 VM1 kernel: tsc: Refined TSC clocksource calibration: 2711.588 MHz
+mei 02 12:01:26 VM1 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2716011c4a0, max_idle_ns: 440795229530 ns
+mei 02 12:01:26 VM1 kernel: ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+mei 02 12:01:26 VM1 kernel: ata3.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+mei 02 12:01:26 VM1 kernel: ata3.00: 41943040 sectors, multi 128: LBA48 NCQ (depth 31/32)
+mei 02 12:01:26 VM1 kernel: ata3.00: configured for UDMA/133
+mei 02 12:01:26 VM1 kernel: [0;1;39mscsi 2:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5[0m
+mei 02 12:01:26 VM1 kernel: [0;1;39msd 2:0:0:0: [sda] 41943040 512-byte logical blocks: (21.5 GB/20.0 GiB)[0m
+mei 02 12:01:26 VM1 kernel: [0;1;39msd 2:0:0:0: [sda] Write Protect is off[0m
+mei 02 12:01:26 VM1 kernel: sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+mei 02 12:01:26 VM1 kernel: [0;1;39msd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA[0m
+mei 02 12:01:26 VM1 kernel: [0;1;39msd 2:0:0:0: Attached scsi generic sg1 type 0[0m
+mei 02 12:01:26 VM1 kernel:  sda: sda1 sda2 < sda5 >
+mei 02 12:01:26 VM1 kernel: [0;1;39msd 2:0:0:0: [sda] Attached SCSI disk[0m
+mei 02 12:01:26 VM1 kernel: floppy0: no floppy controllers found
+mei 02 12:01:26 VM1 kernel: work still pending
+mei 02 12:01:26 VM1 kernel: EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+mei 02 12:01:26 VM1 systemd[1]: systemd 229 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN)
+mei 02 12:01:26 VM1 systemd[1]: Detected virtualization oracle.
+mei 02 12:01:26 VM1 systemd[1]: Detected architecture x86-64.
+mei 02 12:01:26 VM1 systemd[1]: Set hostname to <VM1>.
+mei 02 12:01:26 VM1 systemd[1]: Listening on udev Kernel Socket.
+mei 02 12:01:26 VM1 systemd[1]: Reached target Remote File Systems (Pre).
+mei 02 12:01:26 VM1 systemd[1]: Listening on Syslog Socket.
+mei 02 12:01:26 VM1 systemd[1]: Listening on Journal Socket.
+mei 02 12:01:26 VM1 systemd[1]: Created slice System Slice.
+mei 02 12:01:26 VM1 systemd[1]: Started Braille Device Support.
+mei 02 12:01:26 VM1 systemd-journald[213]: Journal started
+-- Subject: The journal has been started
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- The system journal process has started up, opened the journal
+-- files for writing and is now ready to process requests.
+mei 02 12:01:26 VM1 systemd[1]: Started udev Kernel Device Manager.
+-- Subject: Unit systemd-udevd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-udevd.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 kernel: EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+mei 02 12:01:26 VM1 kernel: lp: driver loaded but no devices found
+mei 02 12:01:26 VM1 systemd[1]: Starting Remount Root and Kernel File Systems...
+-- Subject: Unit systemd-remount-fs.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-remount-fs.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Mounted POSIX Message Queue File System.
+-- Subject: Unit dev-mqueue.mount has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-mqueue.mount has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Mounted Debug File System.
+-- Subject: Unit sys-kernel-debug.mount has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sys-kernel-debug.mount has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Mounted Huge Pages File System.
+-- Subject: Unit dev-hugepages.mount has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-hugepages.mount has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd-modules-load[206]: Inserted module 'lp'
+mei 02 12:01:26 VM1 systemd[1]: Started Remount Root and Kernel File Systems.
+-- Subject: Unit systemd-remount-fs.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-remount-fs.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Starting Flush Journal to Persistent Storage...
+-- Subject: Unit systemd-journal-flush.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-journal-flush.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Starting udev Coldplug all Devices...
+-- Subject: Unit systemd-udev-trigger.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-udev-trigger.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Starting Load/Save Random Seed...
+-- Subject: Unit systemd-random-seed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-random-seed.service has begun starting up.
+mei 02 12:01:26 VM1 systemd-modules-load[206]: Inserted module 'ppdev'
+mei 02 12:01:26 VM1 kernel: ppdev: user-space parallel port driver
+mei 02 12:01:26 VM1 systemd-modules-load[206]: Inserted module 'parport_pc'
+mei 02 12:01:26 VM1 systemd[1]: Started Load Kernel Modules.
+-- Subject: Unit systemd-modules-load.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-modules-load.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Started Load/Save Random Seed.
+-- Subject: Unit systemd-random-seed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-random-seed.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Started Flush Journal to Persistent Storage.
+-- Subject: Unit systemd-journal-flush.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-journal-flush.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Starting Apply Kernel Variables...
+-- Subject: Unit systemd-sysctl.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-sysctl.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Mounting FUSE Control File System...
+-- Subject: Unit sys-fs-fuse-connections.mount has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sys-fs-fuse-connections.mount has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Mounting Configuration File System...
+-- Subject: Unit sys-kernel-config.mount has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sys-kernel-config.mount has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Started Apply Kernel Variables.
+-- Subject: Unit systemd-sysctl.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-sysctl.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Mounted Configuration File System.
+-- Subject: Unit sys-kernel-config.mount has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sys-kernel-config.mount has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 loadkeys[209]: Loading /etc/console-setup/cached.kmap.gz
+mei 02 12:01:26 VM1 systemd[1]: Mounted FUSE Control File System.
+-- Subject: Unit sys-fs-fuse-connections.mount has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sys-fs-fuse-connections.mount has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Started Set console keymap.
+-- Subject: Unit keyboard-setup.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit keyboard-setup.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Reached target Local File Systems (Pre).
+-- Subject: Unit local-fs-pre.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit local-fs-pre.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Reached target Local File Systems.
+-- Subject: Unit local-fs.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit local-fs.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+-- Subject: Unit plymouth-read-write.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-read-write.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Starting Create Volatile Files and Directories...
+-- Subject: Unit systemd-tmpfiles-setup.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-setup.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Starting LSB: AppArmor initialization...
+-- Subject: Unit apparmor.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apparmor.service has begun starting up.
+mei 02 12:01:26 VM1 systemd-tmpfiles[269]: [0;1;39m[/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.[0m
+mei 02 12:01:26 VM1 systemd[1]: Starting Set console font and keymap...
+-- Subject: Unit console-setup.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit console-setup.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Starting Clean up any mess left by 0dns-up...
+-- Subject: Unit dns-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dns-clean.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Started udev Coldplug all Devices.
+-- Subject: Unit systemd-udev-trigger.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-udev-trigger.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Started Create Volatile Files and Directories.
+-- Subject: Unit systemd-tmpfiles-setup.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-setup.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+-- Subject: Unit plymouth-read-write.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-read-write.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Started Clean up any mess left by 0dns-up.
+-- Subject: Unit dns-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dns-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Starting Nameserver information manager...
+-- Subject: Unit resolvconf.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit resolvconf.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Starting Network Time Synchronization...
+-- Subject: Unit systemd-timesyncd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-timesyncd.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+-- Subject: Unit systemd-update-utmp.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Starting Show Plymouth Boot Screen...
+-- Subject: Unit plymouth-start.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-start.service has begun starting up.
+mei 02 12:01:26 VM1 systemd[1]: Started Network Time Synchronization.
+-- Subject: Unit systemd-timesyncd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-timesyncd.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Reached target System Time Synchronized.
+-- Subject: Unit time-sync.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit time-sync.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Started Nameserver information manager.
+-- Subject: Unit resolvconf.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit resolvconf.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Reached target Network (Pre).
+-- Subject: Unit network-pre.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit network-pre.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:26 VM1 systemd[1]: Started Update UTMP about System Boot/Shutdown.
+-- Subject: Unit systemd-update-utmp.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:27 VM1 systemd[1]: Received SIGRTMIN+20 from PID 310 (plymouthd).
+mei 02 12:01:27 VM1 systemd[1]: Started Show Plymouth Boot Screen.
+-- Subject: Unit plymouth-start.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-start.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:27 VM1 systemd[1]: Started Forward Password Requests to Plymouth Directory Watch.
+-- Subject: Unit systemd-ask-password-plymouth.path has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-ask-password-plymouth.path has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:27 VM1 apparmor[270]:  * Starting AppArmor profiles
+mei 02 12:01:27 VM1 kernel: piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+mei 02 12:01:27 VM1 kernel: [0;1;39mvgdrvHeartbeatInit: Setting up heartbeat to trigger every 2000 milliseconds[0m
+mei 02 12:01:27 VM1 kernel: input: Unspecified device as /devices/pci0000:00/0000:00:04.0/input/input7
+mei 02 12:01:27 VM1 kernel: [0;1;39mvboxguest: misc device minor 55, IRQ 20, I/O port d020, MMIO at 00000000f0400000 (size 0x400000)[0m
+mei 02 12:01:27 VM1 kernel: vboxguest: Successfully loaded version 5.1.28_Ubuntu (interface 0x00010004)
+mei 02 12:01:27 VM1 kernel: [drm] VRAM 01000000
+mei 02 12:01:27 VM1 audit[410]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=410 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[410]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=410 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[418]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=418 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[418]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=418 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[418]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=418 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[418]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=418 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[422]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince" pid=422 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[422]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince//sanitized_helper" pid=422 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[422]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer" pid=422 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[422]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer//sanitized_helper" pid=422 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[422]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-thumbnailer" pid=422 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[422]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-thumbnailer//sanitized_helper" pid=422 comm="apparmor_parser"
+mei 02 12:01:27 VM1 apparmor[270]: Skipping profile in /etc/apparmor.d/disable: usr.bin.firefox
+mei 02 12:01:27 VM1 kernel: [TTM] Zone  kernel: Available graphics memory: 1970842 kiB
+mei 02 12:01:27 VM1 kernel: [TTM] Initializing pool allocator
+mei 02 12:01:27 VM1 kernel: [TTM] Initializing DMA pool allocator
+mei 02 12:01:27 VM1 kernel: [0;1;39maudit: type=1400 audit(1525255287.466:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=410 comm="apparmor_parser"[0m
+mei 02 12:01:27 VM1 kernel: [0;1;39maudit: type=1400 audit(1525255287.466:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=410 comm="apparmor_parser"[0m
+mei 02 12:01:27 VM1 kernel: [0;1;39maudit: type=1400 audit(1525255287.477:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=418 comm="apparmor_parser"[0m
+mei 02 12:01:27 VM1 kernel: [0;1;39maudit: type=1400 audit(1525255287.477:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=418 comm="apparmor_parser"[0m
+mei 02 12:01:27 VM1 kernel: [0;1;39maudit: type=1400 audit(1525255287.477:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=418 comm="apparmor_parser"[0m
+mei 02 12:01:27 VM1 kernel: [0;1;39maudit: type=1400 audit(1525255287.477:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=418 comm="apparmor_parser"[0m
+mei 02 12:01:27 VM1 kernel: [0;1;39maudit: type=1400 audit(1525255287.514:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince" pid=422 comm="apparmor_parser"[0m
+mei 02 12:01:27 VM1 kernel: [0;1;39maudit: type=1400 audit(1525255287.514:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince//sanitized_helper" pid=422 comm="apparmor_parser"[0m
+mei 02 12:01:27 VM1 kernel: [0;1;39maudit: type=1400 audit(1525255287.514:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer" pid=422 comm="apparmor_parser"[0m
+mei 02 12:01:27 VM1 kernel: [0;1;39maudit: type=1400 audit(1525255287.514:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer//sanitized_helper" pid=422 comm="apparmor_parser"[0m
+mei 02 12:01:27 VM1 kernel: fbcon: vboxdrmfb (fb0) is primary device
+mei 02 12:01:27 VM1 kernel: Console: switching to colour frame buffer device 100x37
+mei 02 12:01:27 VM1 kernel: vboxvideo 0000:00:02.0: fb0: vboxdrmfb frame buffer device
+mei 02 12:01:27 VM1 audit[429]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="webbrowser-app" pid=429 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[429]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="webbrowser-app//oxide_helper" pid=429 comm="apparmor_parser"
+mei 02 12:01:27 VM1 kernel: [drm] Initialized vboxvideo 1.0.0 20130823 for 0000:00:02.0 on minor 0
+mei 02 12:01:27 VM1 audit[444]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=444 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[444]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=444 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[444]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//snap_update_ns" pid=444 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[450]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=450 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[451]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=451 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[451]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cupsd" pid=451 comm="apparmor_parser"
+mei 02 12:01:27 VM1 audit[451]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cupsd//third_party" pid=451 comm="apparmor_parser"
+mei 02 12:01:27 VM1 mtp-probe[432]: checking bus 1, device 2: "/sys/devices/pci0000:00/0000:00:06.0/usb1/1-1"
+mei 02 12:01:27 VM1 mtp-probe[432]: bus: 1, device: 2 was not an MTP device
+mei 02 12:01:27 VM1 kernel: RAPL PMU: API unit is 2^-32 Joules, 5 fixed counters, 10737418240 ms ovfl timer
+mei 02 12:01:27 VM1 kernel: RAPL PMU: hw unit of domain pp0-core 2^-0 Joules
+mei 02 12:01:27 VM1 kernel: RAPL PMU: hw unit of domain package 2^-0 Joules
+mei 02 12:01:27 VM1 kernel: RAPL PMU: hw unit of domain dram 2^-0 Joules
+mei 02 12:01:27 VM1 kernel: RAPL PMU: hw unit of domain pp1-gpu 2^-0 Joules
+mei 02 12:01:27 VM1 kernel: RAPL PMU: hw unit of domain psys 2^-0 Joules
+mei 02 12:01:27 VM1 audit[452]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ippusbxd" pid=452 comm="apparmor_parser"
+mei 02 12:01:27 VM1 apparmor[270]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+mei 02 12:01:27 VM1 audit[455]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=455 comm="apparmor_parser"
+mei 02 12:01:27 VM1 apparmor[270]:    ...done.
+mei 02 12:01:27 VM1 systemd[1]: Started LSB: AppArmor initialization.
+-- Subject: Unit apparmor.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apparmor.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:27 VM1 systemd[1]: Starting Raise network interfaces...
+-- Subject: Unit networking.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit networking.service has begun starting up.
+mei 02 12:01:27 VM1 systemd[1]: Started Set console font and keymap.
+-- Subject: Unit console-setup.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit console-setup.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:27 VM1 systemd[1]: Created slice system-getty.slice.
+-- Subject: Unit system-getty.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit system-getty.slice has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:27 VM1 kernel: AVX2 version of gcm_enc/dec engaged.
+mei 02 12:01:27 VM1 kernel: AES CTR mode by8 optimization enabled
+mei 02 12:01:27 VM1 systemd[1]: Started Raise network interfaces.
+-- Subject: Unit networking.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit networking.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:27 VM1 kernel: [0;1;39mrandom: crng init done[0m
+mei 02 12:01:28 VM1 systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+-- Subject: Unit systemd-rfkill.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-rfkill.socket has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Found device VBOX_HARDDISK 5.
+-- Subject: Unit dev-disk-by\x2duuid-a13b296a\x2dbe3a\x2d4de1\x2d8a5f\x2db55294b5c389.device has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-disk-by\x2duuid-a13b296a\x2dbe3a\x2d4de1\x2d8a5f\x2db55294b5c389.device has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Activating swap /dev/disk/by-uuid/a13b296a-be3a-4de1-8a5f-b55294b5c389...
+-- Subject: Unit dev-disk-by\x2duuid-a13b296a\x2dbe3a\x2d4de1\x2d8a5f\x2db55294b5c389.swap has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-disk-by\x2duuid-a13b296a\x2dbe3a\x2d4de1\x2d8a5f\x2db55294b5c389.swap has begun starting up.
+mei 02 12:01:28 VM1 systemd[1]: Activated swap /dev/disk/by-uuid/a13b296a-be3a-4de1-8a5f-b55294b5c389.
+-- Subject: Unit dev-disk-by\x2duuid-a13b296a\x2dbe3a\x2d4de1\x2d8a5f\x2db55294b5c389.swap has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-disk-by\x2duuid-a13b296a\x2dbe3a\x2d4de1\x2d8a5f\x2db55294b5c389.swap has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Reached target Swap.
+-- Subject: Unit swap.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit swap.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Reached target System Initialization.
+-- Subject: Unit sysinit.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sysinit.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Listening on UUID daemon activation socket.
+-- Subject: Unit uuidd.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit uuidd.socket has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 kernel: Adding 4093948k swap on /dev/sda5.  Priority:-1 extents:1 across:4093948k FS
+mei 02 12:01:28 VM1 systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apt-daily.timer has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Starting Socket activation for snappy daemon.
+-- Subject: Unit snapd.socket has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.socket has begun starting up.
+mei 02 12:01:28 VM1 systemd[1]: Listening on D-Bus System Message Bus Socket.
+-- Subject: Unit dbus.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dbus.socket has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Started ACPI Events Check.
+-- Subject: Unit acpid.path has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.path has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Listening on CUPS Scheduler.
+-- Subject: Unit cups.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.socket has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Started Timer to automatically refresh installed snaps.
+-- Subject: Unit snapd.refresh.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.refresh.timer has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+-- Subject: Unit avahi-daemon.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit avahi-daemon.socket has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: Unit apt-daily-upgrade.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apt-daily-upgrade.timer has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Listening on ACPID Listen Socket.
+-- Subject: Unit acpid.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.socket has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Started Daily Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-clean.timer has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Reached target Timers.
+-- Subject: Unit timers.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit timers.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.path has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.path has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Reached target Paths.
+-- Subject: Unit paths.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit paths.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Listening on Socket activation for snappy daemon.
+-- Subject: Unit snapd.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.socket has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Reached target Sockets.
+-- Subject: Unit sockets.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sockets.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Reached target Basic System.
+-- Subject: Unit basic.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit basic.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 systemd[1]: Starting Permit User Sessions...
+-- Subject: Unit systemd-user-sessions.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-user-sessions.service has begun starting up.
+mei 02 12:01:28 VM1 systemd[1]: Starting LSB: daemon to balance interrupts for SMP systems...
+-- Subject: Unit irqbalance.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit irqbalance.service has begun starting up.
+mei 02 12:01:28 VM1 systemd[1]: Starting LSB: Set the CPU Frequency Scaling governor to "ondemand"...
+-- Subject: Unit ondemand.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ondemand.service has begun starting up.
+mei 02 12:01:28 VM1 systemd[1]: Starting System Logging Service...
+-- Subject: Unit rsyslog.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rsyslog.service has begun starting up.
+mei 02 12:01:28 VM1 systemd[1]: Started D-Bus System Message Bus.
+-- Subject: Unit dbus.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dbus.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:28 VM1 kernel: snd_intel8x0 0000:00:05.0: white list rate for 1028:0177 is 48000
+mei 02 12:01:29 VM1 dbus[697]: [0;1;39m[system] AppArmor D-Bus mediation is enabled[0m
+mei 02 12:01:29 VM1 systemd[1]: Starting Login Service...
+-- Subject: Unit systemd-logind.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-logind.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+-- Subject: Unit avahi-daemon.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit avahi-daemon.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Starting Thermal Daemon Service...
+-- Subject: Unit thermald.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit thermald.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Starting Snappy daemon...
+-- Subject: Unit snapd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Starting LSB: Speech Dispatcher...
+-- Subject: Unit speech-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit speech-dispatcher.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Starting Network Manager...
+-- Subject: Unit NetworkManager.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Starting Save/Restore Sound Card State...
+-- Subject: Unit alsa-restore.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit alsa-restore.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Starting Detect the available GPUs and deal with any system changes...
+-- Subject: Unit gpu-manager.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit gpu-manager.service has begun starting up.
+mei 02 12:01:29 VM1 avahi-daemon[708]: Found user 'avahi' (UID 111) and group 'avahi' (GID 120).
+mei 02 12:01:29 VM1 avahi-daemon[708]: Successfully dropped root privileges.
+mei 02 12:01:29 VM1 avahi-daemon[708]: avahi-daemon 0.6.32-rc starting up.
+mei 02 12:01:29 VM1 gpu-manager[717]: /etc/modprobe.d is not a file
+mei 02 12:01:29 VM1 gpu-manager[717]: /etc/modprobe.d is not a file
+mei 02 12:01:29 VM1 gpu-manager[717]: /etc/modprobe.d is not a file
+mei 02 12:01:29 VM1 gpu-manager[717]: /etc/modprobe.d is not a file
+mei 02 12:01:29 VM1 gpu-manager[717]: /etc/modprobe.d is not a file
+mei 02 12:01:29 VM1 avahi-daemon[708]: Successfully called chroot().
+mei 02 12:01:29 VM1 avahi-daemon[708]: Successfully dropped remaining capabilities.
+mei 02 12:01:29 VM1 systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 systemd[1]: Starting Restore /etc/resolv.conf if the system crashed before the ppp link was shut down...
+-- Subject: Unit pppd-dns.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit pppd-dns.service has begun starting up.
+mei 02 12:01:29 VM1 avahi-daemon[708]: No service file found in /etc/avahi/services.
+mei 02 12:01:29 VM1 avahi-daemon[708]: Network interface enumeration completed.
+mei 02 12:01:29 VM1 systemd[1]: Started Regular background program processing daemon.
+-- Subject: Unit cron.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cron.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 avahi-daemon[708]: Server startup complete. Host name is VM1.local. Local service cookie is 2498001792.
+mei 02 12:01:29 VM1 systemd[1]: Starting LSB: Record successful boot for GRUB...
+-- Subject: Unit grub-common.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit grub-common.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Starting Accounts Service...
+-- Subject: Unit accounts-daemon.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit accounts-daemon.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Started Run anacron jobs.
+-- Subject: Unit anacron.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit anacron.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 systemd[1]: Starting Modem Manager...
+-- Subject: Unit ModemManager.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ModemManager.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Starting LSB: automatic crash report generation...
+-- Subject: Unit apport.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apport.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Started System Logging Service.
+-- Subject: Unit rsyslog.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rsyslog.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 systemd[1]: Started Permit User Sessions.
+-- Subject: Unit systemd-user-sessions.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-user-sessions.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 systemd[1]: Started Restore /etc/resolv.conf if the system crashed before the ppp link was shut down.
+-- Subject: Unit pppd-dns.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit pppd-dns.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 anacron[739]: [0;1;39mAnacron 2.3 started on 2018-05-02[0m
+mei 02 12:01:29 VM1 acpid[730]: starting up with netlink and the input layer
+mei 02 12:01:29 VM1 cron[736]: (CRON) INFO (pidfile fd = 3)
+mei 02 12:01:29 VM1 systemd[1]: Started Save/Restore Sound Card State.
+-- Subject: Unit alsa-restore.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit alsa-restore.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 cron[736]: (CRON) INFO (Running @reboot jobs)
+mei 02 12:01:29 VM1 anacron[739]: [0;1;39mWill run job `cron.daily' in 5 min.[0m
+mei 02 12:01:29 VM1 anacron[739]: [0;1;39mWill run job `cron.weekly' in 10 min.[0m
+mei 02 12:01:29 VM1 anacron[739]: [0;1;39mJobs will be executed sequentially[0m
+mei 02 12:01:29 VM1 apport[742]:  * Starting automatic crash report generation: apport
+mei 02 12:01:29 VM1 systemd-logind[707]: New seat seat0.
+-- Subject: A new seat seat0 is now available
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new seat seat0 has been configured and is now available.
+mei 02 12:01:29 VM1 systemd-logind[707]: Watching system buttons on /dev/input/event0 (Power Button)
+mei 02 12:01:29 VM1 systemd-logind[707]: Watching system buttons on /dev/input/event1 (Sleep Button)
+mei 02 12:01:29 VM1 systemd-logind[707]: Watching system buttons on /dev/input/event3 (Video Bus)
+mei 02 12:01:29 VM1 systemd[1]: Started Avahi mDNS/DNS-SD Stack.
+-- Subject: Unit avahi-daemon.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit avahi-daemon.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 systemd[1]: Started Login Service.
+-- Subject: Unit systemd-logind.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-logind.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 systemd[1]: Started Make remote CUPS printers available locally.
+-- Subject: Unit cups-browsed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups-browsed.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 systemd[1]: Reached target Sound Card.
+-- Subject: Unit sound.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sound.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 speech-dispatcher[711]:  * speech-dispatcher disabled; edit /etc/default/speech-dispatcher
+mei 02 12:01:29 VM1 irqbalance[690]:  * Starting SMP IRQ Balancer: irqbalance
+mei 02 12:01:29 VM1 systemd[1]: Started LSB: Speech Dispatcher.
+-- Subject: Unit speech-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit speech-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 gpu-manager[717]: update-alternatives: error: no alternatives for x86_64-linux-gnu_gfxcore_conf
+mei 02 12:01:29 VM1 acpid[730]: 9 rules loaded
+mei 02 12:01:29 VM1 acpid[730]: waiting for events: event logging is off
+mei 02 12:01:29 VM1 systemd[1]: Started Detect the available GPUs and deal with any system changes.
+-- Subject: Unit gpu-manager.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit gpu-manager.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 systemd[1]: Starting Light Display Manager...
+-- Subject: Unit lightdm.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit lightdm.service has begun starting up.
+mei 02 12:01:29 VM1 systemd[1]: Started LSB: Set the CPU Frequency Scaling governor to "ondemand".
+-- Subject: Unit ondemand.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ondemand.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 /usr/sbin/irqbalance[771]: [0;1;39mBalancing is ineffective on systems with a single cpu.  Shutting down[0m
+mei 02 12:01:29 VM1 irqbalance[690]:    ...done.
+mei 02 12:01:29 VM1 systemd[1]: Started LSB: daemon to balance interrupts for SMP systems.
+-- Subject: Unit irqbalance.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit irqbalance.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 systemd[1]: Started Thermal Daemon Service.
+-- Subject: Unit thermald.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit thermald.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 thermald[709]: NO RAPL sysfs present
+mei 02 12:01:29 VM1 thermald[709]: 22 CPUID levels; family:model:stepping 0x6:8e:9 (6:142:9)
+mei 02 12:01:29 VM1 thermald[709]: Polling mode is enabled: 4
+mei 02 12:01:29 VM1 thermald[709]: Thermal DTS: No coretemp sysfs found
+mei 02 12:01:29 VM1 ModemManager[740]: <info>  ModemManager (version 1.4.12) starting in system bus...
+mei 02 12:01:29 VM1 thermald[709]: Thermal DTS or hwmon: No Zones present Need to configure manually
+mei 02 12:01:29 VM1 thermald[709]: No thermal sensors found
+mei 02 12:01:29 VM1 thermald[709]: THD engine start failed
+mei 02 12:01:29 VM1 NetworkManager[712]: <info>  [1525255289.8872] NetworkManager (version 1.2.6) is starting...
+mei 02 12:01:29 VM1 NetworkManager[712]: <info>  [1525255289.8882] Read config: /etc/NetworkManager/NetworkManager.conf (etc: default-wifi-powersave-on.conf)
+mei 02 12:01:29 VM1 snapd[710]: AppArmor status: apparmor is enabled and all features are available
+mei 02 12:01:29 VM1 snapd[710]: 2018/05/02 12:01:29.929479 daemon.go:306: started snapd/2.29.4.2 (series 16; classic) ubuntu/16.04 (amd64) linux/4.13.0-39-generic.
+mei 02 12:01:29 VM1 systemd[1]: Started Snappy daemon.
+-- Subject: Unit snapd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 apport[742]:    ...done.
+mei 02 12:01:29 VM1 systemd[1]: Started LSB: automatic crash report generation.
+-- Subject: Unit apport.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apport.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:29 VM1 NetworkManager[712]: <info>  [1525255289.9661] manager[0x1ff21c0]: monitoring kernel firmware directory '/lib/firmware'.
+mei 02 12:01:29 VM1 NetworkManager[712]: <info>  [1525255289.9671] monitoring ifupdown state file '/run/network/ifstate'.
+mei 02 12:01:29 VM1 dbus[697]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkitd.service'[0m
+mei 02 12:01:29 VM1 dbus[697]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.Accounts' unit='accounts-daemon.service'[0m
+mei 02 12:01:29 VM1 systemd[1]: Starting Authenticate and Authorize Users to Run Privileged Tasks...
+-- Subject: Unit polkitd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit polkitd.service has begun starting up.
+mei 02 12:01:29 VM1 NetworkManager[712]: <info>  [1525255289.9839] dns-mgr[0x1fd1950]: init: dns=dnsmasq, rc-manager=resolvconf, plugin=dnsmasq
+mei 02 12:01:30 VM1 snapd[710]: 2018/05/02 12:01:30.015025 stateengine.go:98: state ensure error: Get https://api.snapcraft.io/api/v1/snaps/sections: dial tcp: lookup api.snapcraft.io on [::1]:53: read udp [::1]:38250->[::1]:53: read: connection refused
+mei 02 12:01:30 VM1 systemd[1]: Started Network Manager.
+-- Subject: Unit NetworkManager.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:30 VM1 systemd[1]: Reached target Network.
+-- Subject: Unit network.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit network.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:30 VM1 systemd[1]: Starting OpenBSD Secure Shell server...
+-- Subject: Unit ssh.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ssh.service has begun starting up.
+mei 02 12:01:30 VM1 systemd[1]: Started Unattended Upgrades Shutdown.
+-- Subject: Unit unattended-upgrades.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit unattended-upgrades.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:30 VM1 systemd[1]: Starting Network Manager Wait Online...
+-- Subject: Unit NetworkManager-wait-online.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-wait-online.service has begun starting up.
+mei 02 12:01:30 VM1 dbus[697]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'[0m
+mei 02 12:01:30 VM1 systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Unit NetworkManager-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has begun starting up.
+mei 02 12:01:30 VM1 polkitd[811]: started daemon version 0.105 using authority implementation `local' version `0.105'
+mei 02 12:01:30 VM1 dbus[697]: [0;1;39m[system] Successfully activated service 'org.freedesktop.PolicyKit1'[0m
+mei 02 12:01:30 VM1 systemd[1]: Started Authenticate and Authorize Users to Run Privileged Tasks.
+-- Subject: Unit polkitd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit polkitd.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:30 VM1 accounts-daemon[738]: started daemon version 0.6.40
+mei 02 12:01:30 VM1 dbus[697]: [0;1;39m[system] Successfully activated service 'org.freedesktop.Accounts'[0m
+mei 02 12:01:30 VM1 systemd[1]: Started Accounts Service.
+-- Subject: Unit accounts-daemon.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit accounts-daemon.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:30 VM1 dbus[697]: [0;1;39m[system] Successfully activated service 'org.freedesktop.nm_dispatcher'[0m
+mei 02 12:01:30 VM1 systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Unit NetworkManager-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:30 VM1 kernel: floppy0: no floppy controllers found
+mei 02 12:01:30 VM1 kernel: work still pending
+mei 02 12:01:30 VM1 sshd[816]: Server listening on 0.0.0.0 port 22.
+mei 02 12:01:30 VM1 sshd[816]: Server listening on :: port 22.
+mei 02 12:01:30 VM1 systemd[1]: Started OpenBSD Secure Shell server.
+-- Subject: Unit ssh.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ssh.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:30 VM1 systemd[1]: Started Modem Manager.
+-- Subject: Unit ModemManager.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ModemManager.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3101] init!
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3102]       interface-parser: parsing file /etc/network/interfaces
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3103]       interface-parser: finished parsing file /etc/network/interfaces
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3103] management mode: unmanaged
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3105] devices added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3, iface: enp0s3)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3105] device added (path: /sys/devices/pci0000:00/0000:00:03.0/net/enp0s3, iface: enp0s3): no ifupdown configuration found.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3105] devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3105] device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3105] end _init.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3105] settings: loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list. (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-settings-plugin-ifupdown.so)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3105] settings: loaded plugin keyfile: (c) 2007 - 2015 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3129] SettingsPlugin-Ofono: init!
+mei 02 12:01:30 VM1 NetworkManager[712]: [0;1;39m<warn>  [1525255290.3130] SettingsPlugin-Ofono: file doesn't exist: /var/lib/ofono[0m
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3130] SettingsPlugin-Ofono: end _init.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3130] settings: loaded plugin ofono: (C) 2013-2016 Canonical Ltd.  To report bugs please use the NetworkManager mailing list. (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-settings-plugin-ofono.so)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3131] (33567008) ... get_connections.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3131] (33567008) ... get_connections (managed=false): return empty list.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3270] keyfile: new connection /etc/NetworkManager/system-connections/Wi-Fi connection 1 (9c340206-eaff-47ad-b3fc-34b3f866f831,"Wi-Fi connection 1")
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3302] SettingsPlugin-Ofono: (33567168) ... get_connections.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3304] SettingsPlugin-Ofono: (33567168) connections count: 0
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3307] get unmanaged devices count: 0
+mei 02 12:01:30 VM1 dbus[697]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'[0m
+mei 02 12:01:30 VM1 systemd[1]: Starting Hostname Service...
+-- Subject: Unit systemd-hostnamed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-hostnamed.service has begun starting up.
+mei 02 12:01:30 VM1 systemd[1]: Received SIGRTMIN+21 from PID 310 (plymouthd).
+mei 02 12:01:30 VM1 systemd[1]: Started Light Display Manager.
+-- Subject: Unit lightdm.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit lightdm.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:30 VM1 systemd[1]: Started LSB: Record successful boot for GRUB.
+-- Subject: Unit grub-common.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit grub-common.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:30 VM1 dbus[697]: [0;1;39m[system] Successfully activated service 'org.freedesktop.hostname1'[0m
+mei 02 12:01:30 VM1 systemd[1]: Started Hostname Service.
+-- Subject: Unit systemd-hostnamed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-hostnamed.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3957] settings: hostname: using hostnamed
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3958] settings: hostname changed from (none) to "VM1"
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3959] Using DHCP client 'dhclient'
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3959] manager: WiFi enabled by radio killswitch; enabled by state file
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3960] manager: WWAN enabled by radio killswitch; enabled by state file
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3960] manager: Networking is enabled by state file
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3960] Loaded device plugin: NMVxlanFactory (internal)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3960] Loaded device plugin: NMVlanFactory (internal)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3960] Loaded device plugin: NMVethFactory (internal)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3960] Loaded device plugin: NMTunFactory (internal)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3961] Loaded device plugin: NMMacvlanFactory (internal)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3961] Loaded device plugin: NMIPTunnelFactory (internal)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3961] Loaded device plugin: NMInfinibandFactory (internal)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3961] Loaded device plugin: NMEthernetFactory (internal)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3961] Loaded device plugin: NMBridgeFactory (internal)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.3961] Loaded device plugin: NMBondFactory (internal)
+mei 02 12:01:30 VM1 nm-dispatcher[818]: req:1 'hostname': new request (1 scripts)
+mei 02 12:01:30 VM1 nm-dispatcher[818]: req:1 'hostname': start running ordered scripts...
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4285] Loaded device plugin: NMWwanFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wwan.so)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4441] Loaded device plugin: NMBluezManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-bluetooth.so)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4569] Loaded device plugin: NMAtmManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-adsl.so)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4656] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wifi.so)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4691] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4702] keyfile: add connection in-memory (55fe54d4-c3f5-3e6a-b281-d2125078b541,"Wired connection 1")
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4707] settings: (enp0s3): created default wired connection 'Wired connection 1'
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4716] device (enp0s3): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+mei 02 12:01:30 VM1 NetworkManager[712]: [0;1;31mnm_device_get_device_type: assertion 'NM_IS_DEVICE (self)' failed[0m
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4743] device (lo): link connected
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4750] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+mei 02 12:01:30 VM1 kernel: IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+mei 02 12:01:30 VM1 kernel: IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+mei 02 12:01:30 VM1 kernel: e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+mei 02 12:01:30 VM1 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4914] urfkill disappeared from the bus
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.4987] device (enp0s3): link connected
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.5035] ModemManager available in the bus
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.5047] ofono is now available
+mei 02 12:01:30 VM1 NetworkManager[712]: [0;1;39m<warn>  [1525255290.5084] failed to enumerate oFono devices: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.ofono was not provided by any .service files[0m
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.5164] device (enp0s3): state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.5197] policy: auto-activating connection 'Wired connection 1'
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.5281] device (enp0s3): Activation: starting connection 'Wired connection 1' (55fe54d4-c3f5-3e6a-b281-d2125078b541)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.5302] device (enp0s3): state change: disconnected -> prepare (reason 'none') [30 40 0]
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.5312] manager: NetworkManager state is now CONNECTING
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.5391] device (enp0s3): state change: prepare -> config (reason 'none') [40 50 0]
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.5434] device (enp0s3): state change: config -> ip-config (reason 'none') [50 70 0]
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.5499] dhcp4 (enp0s3): activation: beginning transaction (timeout in 45 seconds)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.6791] dhcp4 (enp0s3): dhclient started with pid 839
+mei 02 12:01:30 VM1 dhclient[839]: DHCPDISCOVER on enp0s3 to 255.255.255.255 port 67 interval 3 (xid=0xff9f5267)
+mei 02 12:01:30 VM1 dhclient[839]: DHCPREQUEST of 10.0.2.15 on enp0s3 to 255.255.255.255 port 67 (xid=0x67529fff)
+mei 02 12:01:30 VM1 dhclient[839]: DHCPOFFER of 10.0.2.15 from 10.0.2.2
+mei 02 12:01:30 VM1 dhclient[839]: DHCPACK of 10.0.2.15 from 10.0.2.2
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7658]   address 10.0.2.15
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7661]   plen 24 (255.255.255.0)
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7663]   gateway 10.0.2.2
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7671]   server identifier 10.0.2.2
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7684]   lease time 86400
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7688]   nameserver '10.109.114.10'
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7690]   nameserver '10.130.5.22'
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7692]   domain name 'dir.svc.accenture.com'
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7695] dhcp4 (enp0s3): state changed unknown -> bound
+mei 02 12:01:30 VM1 avahi-daemon[708]: Joining mDNS multicast group on interface enp0s3.IPv4 with address 10.0.2.15.
+mei 02 12:01:30 VM1 avahi-daemon[708]: New relevant interface enp0s3.IPv4 for mDNS.
+mei 02 12:01:30 VM1 avahi-daemon[708]: Registering new address record for 10.0.2.15 on enp0s3.IPv4.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7724] device (enp0s3): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7818] device (enp0s3): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7907] device (enp0s3): state change: secondaries -> activated (reason 'none') [90 100 0]
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7917] manager: NetworkManager state is now CONNECTED_LOCAL
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.7995] manager: NetworkManager state is now CONNECTED_GLOBAL
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.8004] policy: set 'Wired connection 1' (enp0s3) as default for IPv4 routing and DNS
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.8017] dns-plugin[0x20010e0]: starting dnsmasq...
+mei 02 12:01:30 VM1 dhclient[839]: bound to 10.0.2.15 -- renewal in 40209 seconds.
+mei 02 12:01:30 VM1 NetworkManager[712]: <info>  [1525255290.9045] dns-mgr: Writing DNS information to /sbin/resolvconf
+mei 02 12:01:30 VM1 dnsmasq[853]: started, version 2.75 cache disabled
+mei 02 12:01:30 VM1 dnsmasq[853]: compile time options: IPv6 GNU-getopt DBus i18n IDN DHCP DHCPv6 no-Lua TFTP conntrack ipset auth DNSSEC loop-detect inotify
+mei 02 12:01:30 VM1 dnsmasq[853]: DBus support enabled: connected to system bus
+mei 02 12:01:30 VM1 dnsmasq[853]: [0;1;39mwarning: no upstream servers configured[0m
+mei 02 12:01:31 VM1 NetworkManager[712]: <info>  [1525255291.0770] device (enp0s3): Activation: successful, device activated.
+mei 02 12:01:31 VM1 nm-dispatcher[818]: req:2 'up' [enp0s3]: new request (1 scripts)
+mei 02 12:01:31 VM1 nm-dispatcher[818]: req:2 'up' [enp0s3]: start running ordered scripts...
+mei 02 12:01:31 VM1 NetworkManager[712]: <info>  [1525255291.0900] dnsmasq[0x20010e0]: dnsmasq appeared as :1.17
+mei 02 12:01:31 VM1 dnsmasq[853]: setting upstream servers from DBus
+mei 02 12:01:31 VM1 dnsmasq[853]: using nameserver 10.109.114.10#53(via enp0s3)
+mei 02 12:01:31 VM1 dnsmasq[853]: using nameserver 10.130.5.22#53(via enp0s3)
+mei 02 12:01:31 VM1 systemd[1]: Reloading OpenBSD Secure Shell server.
+-- Subject: Unit ssh.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ssh.service has begun reloading its configuration
+mei 02 12:01:31 VM1 sshd[816]: Received SIGHUP; restarting.
+mei 02 12:01:31 VM1 systemd[1]: Reloaded OpenBSD Secure Shell server.
+-- Subject: Unit ssh.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ssh.service has finished reloading its configuration
+-- 
+-- The result is done.
+mei 02 12:01:31 VM1 sshd[816]: Server listening on 0.0.0.0 port 22.
+mei 02 12:01:31 VM1 sshd[816]: Server listening on :: port 22.
+mei 02 12:01:31 VM1 systemd[1]: Reloading OpenBSD Secure Shell server.
+-- Subject: Unit ssh.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ssh.service has begun reloading its configuration
+mei 02 12:01:31 VM1 sshd[816]: Received SIGHUP; restarting.
+mei 02 12:01:31 VM1 systemd[1]: Reloaded OpenBSD Secure Shell server.
+-- Subject: Unit ssh.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ssh.service has finished reloading its configuration
+-- 
+-- The result is done.
+mei 02 12:01:31 VM1 sshd[816]: Server listening on 0.0.0.0 port 22.
+mei 02 12:01:31 VM1 sshd[816]: Server listening on :: port 22.
+mei 02 12:01:31 VM1 lightdm[1014]: pam_unix(lightdm-autologin:session): session opened for user appie by (uid=0)
+mei 02 12:01:31 VM1 systemd[1]: Created slice User Slice of appie.
+-- Subject: Unit user-1000.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user-1000.slice has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:31 VM1 systemd[1]: Starting User Manager for UID 1000...
+-- Subject: Unit user@1000.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@1000.service has begun starting up.
+mei 02 12:01:31 VM1 systemd[1]: Started Session c1 of user appie.
+-- Subject: Unit session-c1.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-c1.scope has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:31 VM1 systemd-logind[707]: New session c1 of user appie.
+-- Subject: A new session c1 has been created for user appie
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID c1 has been created for the user appie.
+-- 
+-- The leading process of the session is 1014.
+mei 02 12:01:31 VM1 systemd[1019]: pam_unix(systemd-user:session): session opened for user appie by (uid=0)
+mei 02 12:01:31 VM1 systemd[1019]: Reached target Timers.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:31 VM1 systemd[1019]: Reached target Paths.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:31 VM1 systemd[1019]: Reached target Sockets.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:31 VM1 systemd[1019]: Reached target Basic System.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:31 VM1 systemd[1019]: Reached target Default.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:31 VM1 systemd[1019]: Startup finished in 43ms.
+-- Subject: System start-up is now complete
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- All system services necessary queued for starting at boot have been
+-- successfully started. Note that this does not mean that the machine is
+-- now idle as services might still be busy with completing start-up.
+-- 
+-- Kernel start-up required KERNEL_USEC microseconds.
+-- 
+-- Initial RAM disk start-up required INITRD_USEC microseconds.
+-- 
+-- Userspace start-up required 43393 microseconds.
+mei 02 12:01:31 VM1 systemd[1]: Started User Manager for UID 1000.
+-- Subject: Unit user@1000.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@1000.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:32 VM1 gnome-keyring-daemon[1153]: [0;1;39mcouldn't access control socket: /run/user/1000/keyring/control: No such file or directory[0m
+mei 02 12:01:32 VM1 gnome-keyring-daemon[1154]: [0;1;39mcouldn't access control socket: /run/user/1000/keyring/control: No such file or directory[0m
+mei 02 12:01:32 VM1 org.ayatana.bamf[1110]: bamfdaemon start/running, process 1182
+mei 02 12:01:32 VM1 ModemManager[740]: <info>  Couldn't find support for device at '/sys/devices/pci0000:00/0000:00:03.0': not supported by any plugin
+mei 02 12:01:32 VM1 org.a11y.Bus[1110]: [0;1;39m** (process:1209): WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files[0m
+mei 02 12:01:32 VM1 org.a11y.Bus[1110]: [0;1;39mActivating service name='org.a11y.atspi.Registry'[0m
+mei 02 12:01:32 VM1 org.a11y.Bus[1110]: [0;1;39mSuccessfully activated service 'org.a11y.atspi.Registry'[0m
+mei 02 12:01:32 VM1 org.a11y.atspi.Registry[1214]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+mei 02 12:01:32 VM1 avahi-daemon[708]: Joining mDNS multicast group on interface enp0s3.IPv6 with address fe80::1a79:5af5:20f9:c88.
+mei 02 12:01:32 VM1 avahi-daemon[708]: New relevant interface enp0s3.IPv6 for mDNS.
+mei 02 12:01:32 VM1 avahi-daemon[708]: Registering new address record for fe80::1a79:5af5:20f9:c88 on enp0s3.*.
+mei 02 12:01:35 VM1 NetworkManager[712]: <info>  [1525255295.3230] manager: startup complete
+mei 02 12:01:35 VM1 systemd[1]: Started Network Manager Wait Online.
+-- Subject: Unit NetworkManager-wait-online.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-wait-online.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:35 VM1 systemd[1]: Reached target Network is Online.
+-- Subject: Unit network-online.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit network-online.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:35 VM1 systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apt-daily.service has begun starting up.
+mei 02 12:01:35 VM1 systemd[1]: Starting LSB: VirtualBox Linux kernel module...
+-- Subject: Unit virtualbox.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit virtualbox.service has begun starting up.
+mei 02 12:01:35 VM1 systemd[1]: Starting /etc/rc.local Compatibility...
+-- Subject: Unit rc-local.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rc-local.service has begun starting up.
+mei 02 12:01:35 VM1 systemd[1]: Started crash report submission daemon.
+-- Subject: Unit whoopsie.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit whoopsie.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:35 VM1 systemd[1]: Started /etc/rc.local Compatibility.
+-- Subject: Unit rc-local.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rc-local.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:35 VM1 systemd[1]: Starting Hold until boot process finishes up...
+-- Subject: Unit plymouth-quit-wait.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-quit-wait.service has begun starting up.
+mei 02 12:01:35 VM1 systemd[1]: Started Hold until boot process finishes up.
+-- Subject: Unit plymouth-quit-wait.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-quit-wait.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:35 VM1 systemd[1]: Starting Set console scheme...
+-- Subject: Unit setvtrgb.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit setvtrgb.service has begun starting up.
+mei 02 12:01:35 VM1 systemd[1]: Started Getty on tty1.
+-- Subject: Unit getty@tty1.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit getty@tty1.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:35 VM1 systemd[1]: Reached target Login Prompts.
+-- Subject: Unit getty.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit getty.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:35 VM1 virtualbox[1243]:  * Loading VirtualBox kernel modules...
+mei 02 12:01:35 VM1 systemd[1]: Started Set console scheme.
+-- Subject: Unit setvtrgb.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit setvtrgb.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:35 VM1 kernel: [0;1;39mvboxdrv: loading out-of-tree module taints kernel.[0m
+mei 02 12:01:35 VM1 kernel: [0;1;39mvboxdrv: module verification failed: signature and/or required key missing - tainting kernel[0m
+mei 02 12:01:35 VM1 kernel: vboxdrv: Found 1 processor cores
+mei 02 12:01:35 VM1 kernel: vboxdrv: TSC mode is Invariant, tentative frequency 2711997162 Hz
+mei 02 12:01:35 VM1 kernel: vboxdrv: Successfully loaded version 5.1.34_Ubuntu (interface 0x002a0000)
+mei 02 12:01:35 VM1 whoopsie[1245]: [12:01:35] Using lock path: /var/lock/whoopsie/lock
+mei 02 12:01:35 VM1 whoopsie[1245]: [12:01:35] The default IPv4 route is: /org/freedesktop/NetworkManager/ActiveConnection/0
+mei 02 12:01:35 VM1 whoopsie[1245]: [12:01:35] Not a paid data plan: /org/freedesktop/NetworkManager/ActiveConnection/0
+mei 02 12:01:35 VM1 whoopsie[1245]: [12:01:35] Found usable connection: /org/freedesktop/NetworkManager/ActiveConnection/0
+mei 02 12:01:35 VM1 kernel: [0;1;39mVBoxNetFlt: Successfully started.[0m
+mei 02 12:01:36 VM1 kernel: [0;1;39mVBoxNetAdp: Successfully started.[0m
+mei 02 12:01:36 VM1 kernel: [0;1;39mVBoxPciLinuxInit[0m
+mei 02 12:01:36 VM1 kernel: vboxpci: IOMMU not found (not registered)
+mei 02 12:01:36 VM1 virtualbox[1243]:    ...done.
+mei 02 12:01:36 VM1 systemd[1]: Started LSB: VirtualBox Linux kernel module.
+-- Subject: Unit virtualbox.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit virtualbox.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:36 VM1 systemd[1]: Reached target Multi-User System.
+-- Subject: Unit multi-user.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit multi-user.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:36 VM1 systemd[1]: Reached target Graphical Interface.
+-- Subject: Unit graphical.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit graphical.target has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:36 VM1 systemd[1]: Starting Update UTMP about System Runlevel Changes...
+-- Subject: Unit systemd-update-utmp-runlevel.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp-runlevel.service has begun starting up.
+mei 02 12:01:36 VM1 systemd[1]: Started Update UTMP about System Runlevel Changes.
+-- Subject: Unit systemd-update-utmp-runlevel.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp-runlevel.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:36 VM1 dbus[697]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service'[0m
+mei 02 12:01:36 VM1 systemd[1]: Starting Daemon for power management...
+-- Subject: Unit upower.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit upower.service has begun starting up.
+mei 02 12:01:36 VM1 dbus[697]: [0;1;39m[system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service'[0m
+mei 02 12:01:36 VM1 dbus[697]: [0;1;39m[system] Successfully activated service 'org.freedesktop.UPower'[0m
+mei 02 12:01:36 VM1 systemd[1]: Started Daemon for power management.
+-- Subject: Unit upower.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit upower.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:36 VM1 gnome-session[1288]: gnome-session-is-accelerated: llvmpipe detected.
+mei 02 12:01:37 VM1 dbus[697]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.ColorManager' unit='colord.service'[0m
+mei 02 12:01:37 VM1 systemd[1]: Starting Manage, Install and Generate Color Profiles...
+-- Subject: Unit colord.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit colord.service has begun starting up.
+mei 02 12:01:37 VM1 dbus[697]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service'[0m
+mei 02 12:01:37 VM1 systemd[1]: Starting RealtimeKit Scheduling Policy Service...
+-- Subject: Unit rtkit-daemon.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rtkit-daemon.service has begun starting up.
+mei 02 12:01:37 VM1 dbus[697]: [0;1;39m[system] Successfully activated service 'org.freedesktop.ColorManager'[0m
+mei 02 12:01:37 VM1 systemd[1]: Started Manage, Install and Generate Color Profiles.
+-- Subject: Unit colord.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit colord.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:37 VM1 dbus[697]: [0;1;39m[system] Successfully activated service 'org.freedesktop.RealtimeKit1'[0m
+mei 02 12:01:37 VM1 systemd[1]: Started RealtimeKit Scheduling Policy Service.
+-- Subject: Unit rtkit-daemon.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rtkit-daemon.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:37 VM1 rtkit-daemon[1463]: Successfully called chroot.
+mei 02 12:01:37 VM1 rtkit-daemon[1463]: Successfully dropped privileges.
+mei 02 12:01:37 VM1 rtkit-daemon[1463]: Successfully limited resources.
+mei 02 12:01:37 VM1 rtkit-daemon[1463]: Running.
+mei 02 12:01:37 VM1 rtkit-daemon[1463]: Watchdog thread running.
+mei 02 12:01:37 VM1 rtkit-daemon[1463]: Successfully made thread 1462 of process 1462 (n/a) owned by '1000' high priority at nice level -11.
+mei 02 12:01:37 VM1 rtkit-daemon[1463]: Supervising 1 threads of 1 processes of 1 users.
+mei 02 12:01:37 VM1 rtkit-daemon[1463]: Canary thread running.
+mei 02 12:01:38 VM1 org.gnome.ScreenSaver[1110]: [0;1;39m** (gnome-screensaver:1430): WARNING **: Couldn't get presence status: The name org.gnome.SessionManager was not provided by any .service files[0m
+mei 02 12:01:38 VM1 pulseaudio[1462]: [0;1;39m[pulseaudio] alsa-util.c: Disabling timer-based scheduling because running inside a VM.[0m
+mei 02 12:01:38 VM1 pulseaudio[1462]: [0;1;39m[pulseaudio] sink.c: Default and alternate sample rates are the same.[0m
+mei 02 12:01:38 VM1 rtkit-daemon[1463]: Supervising 1 threads of 1 processes of 1 users.
+mei 02 12:01:38 VM1 rtkit-daemon[1463]: Successfully made thread 1487 of process 1462 (n/a) owned by '1000' RT at priority 5.
+mei 02 12:01:38 VM1 rtkit-daemon[1463]: Supervising 2 threads of 1 processes of 1 users.
+mei 02 12:01:38 VM1 pulseaudio[1462]: [0;1;31m[alsa-sink-Intel ICH] alsa-sink.c: ALSA woke us up to write new data to the device, but there was actually nothing to write.[0m
+mei 02 12:01:38 VM1 pulseaudio[1462]: [0;1;31m[alsa-sink-Intel ICH] alsa-sink.c: Most likely this is a bug in the ALSA driver 'snd_intel8x0'. Please report this issue to the ALSA developers.[0m
+mei 02 12:01:38 VM1 pulseaudio[1462]: [0;1;31m[alsa-sink-Intel ICH] alsa-sink.c: We were woken up with POLLOUT set -- however a subsequent snd_pcm_avail() returned 0 or another value < min_avail.[0m
+mei 02 12:01:38 VM1 pulseaudio[1462]: [0;1;39m[pulseaudio] alsa-util.c: Disabling timer-based scheduling because running inside a VM.[0m
+mei 02 12:01:38 VM1 rtkit-daemon[1463]: Supervising 2 threads of 1 processes of 1 users.
+mei 02 12:01:38 VM1 rtkit-daemon[1463]: Successfully made thread 1488 of process 1462 (n/a) owned by '1000' RT at priority 5.
+mei 02 12:01:38 VM1 rtkit-daemon[1463]: Supervising 3 threads of 1 processes of 1 users.
+mei 02 12:01:38 VM1 gnome-keyring-daemon[1153]: [0;1;39mThe PKCS#11 component was already initialized[0m
+mei 02 12:01:38 VM1 gnome-session[1288]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+mei 02 12:01:38 VM1 gnome-keyring-daemon[1153]: [0;1;39mThe Secret Service was already initialized[0m
+mei 02 12:01:38 VM1 gnome-session[1288]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+mei 02 12:01:38 VM1 rtkit-daemon[1463]: Successfully made thread 1496 of process 1496 (n/a) owned by '1000' high priority at nice level -11.
+mei 02 12:01:38 VM1 rtkit-daemon[1463]: Supervising 4 threads of 2 processes of 1 users.
+mei 02 12:01:38 VM1 pulseaudio[1496]: [0;1;31m[pulseaudio] pid.c: Daemon already running.[0m
+mei 02 12:01:38 VM1 gnome-keyring-daemon[1153]: [0;1;39mThe SSH agent was already initialized[0m
+mei 02 12:01:38 VM1 gnome-session[1288]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+mei 02 12:01:38 VM1 dbus[697]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service'[0m
+mei 02 12:01:38 VM1 systemd[1]: Starting Locale Service...
+-- Subject: Unit systemd-localed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-localed.service has begun starting up.
+mei 02 12:01:38 VM1 dbus[697]: [0;1;39m[system] Successfully activated service 'org.freedesktop.locale1'[0m
+mei 02 12:01:38 VM1 systemd[1]: Started Locale Service.
+-- Subject: Unit systemd-localed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-localed.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:39 VM1 gnome-session-binary[1288]: [0;1;39mEntering running state[0m
+mei 02 12:01:39 VM1 gnome-session[1288]: (process:1514): indicator-application-service-WARNING **: Unable to get watcher name 'org.kde.StatusNotifierWatcher'
+mei 02 12:01:39 VM1 gnome-session[1288]: (process:1514): indicator-application-service-WARNING **: Name Lost
+mei 02 12:01:40 VM1 dbus[697]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.UDisks2' unit='udisks2.service'[0m
+mei 02 12:01:40 VM1 systemd[1]: Starting Disk Manager...
+-- Subject: Unit udisks2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit udisks2.service has begun starting up.
+mei 02 12:01:40 VM1 udisksd[1545]: [0;1;39mudisks daemon version 2.1.7 starting[0m
+mei 02 12:01:40 VM1 dbus[697]: [0;1;39m[system] Successfully activated service 'org.freedesktop.UDisks2'[0m
+mei 02 12:01:40 VM1 systemd[1]: Started Disk Manager.
+-- Subject: Unit udisks2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit udisks2.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:40 VM1 udisksd[1545]: [0;1;39mAcquired the name org.freedesktop.UDisks2 on the system message bus[0m
+mei 02 12:01:40 VM1 NetworkManager[712]: <info>  [1525255300.3273] manager: WiFi hardware radio set enabled
+mei 02 12:01:40 VM1 NetworkManager[712]: <info>  [1525255300.3274] manager: WWAN hardware radio set enabled
+mei 02 12:01:40 VM1 polkitd(authority=local)[811]: [0;1;39mRegistered Authentication Agent for unix-session:c1 (system bus name :1.49 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+mei 02 12:01:40 VM1 dbus[697]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service'[0m
+mei 02 12:01:40 VM1 systemd[1]: Starting Firmware update daemon...
+-- Subject: Unit fwupd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit fwupd.service has begun starting up.
+mei 02 12:01:41 VM1 org.gtk.vfs.AfcVolumeMonitor[1110]: Volume monitor alive
+mei 02 12:01:43 VM1 fwupd[1611]: (fwupd:1611): Fu-WARNING **: disabling plugin because: failed to coldplug raspberrypi: Raspberry PI firmware updating not supported, no /boot/start.elf
+mei 02 12:01:43 VM1 fwupd[1611]: (fwupd:1611): Fu-WARNING **: disabling plugin because: failed to coldplug uefi: UEFI firmware updating not supported
+mei 02 12:01:44 VM1 dbus[697]: [0;1;39m[system] Successfully activated service 'org.freedesktop.fwupd'[0m
+mei 02 12:01:44 VM1 systemd[1]: Started Firmware update daemon.
+-- Subject: Unit fwupd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit fwupd.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:01:45 VM1 org.gnome.ScreenSaver[1110]: [0;1;39m** Message: Lost the name, shutting down.[0m
+mei 02 12:01:59 VM1 org.gnome.zeitgeist.Engine[1110]: [0;1;39m** (zeitgeist-datahub:2086): WARNING **: zeitgeist-datahub.vala:229: Unable to get name "org.gnome.zeitgeist.datahub" on the bus![0m
+mei 02 12:02:01 VM1 dbus[697]: [0;1;39m[system] Failed to activate service 'org.bluez': timed out[0m
+mei 02 12:02:01 VM1 pulseaudio[1462]: [0;1;31m[pulseaudio] bluez5-util.c: GetManagedObjects() failed: org.freedesktop.DBus.Error.TimedOut: Failed to activate service 'org.bluez': timed out[0m
+mei 02 12:02:07 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+mei 02 12:02:17 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+mei 02 12:02:27 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+mei 02 12:02:38 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+mei 02 12:02:41 VM1 pkexec[2160]: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+mei 02 12:02:41 VM1 pkexec[2160]: pam_systemd(polkit-1:session): Cannot create session: Already running in a session
+mei 02 12:02:41 VM1 pkexec[2160]: [0;1;39mappie: Executing command [USER=root] [TTY=unknown] [CWD=/home/appie] [COMMAND=/usr/lib/update-notifier/package-system-locked][0m
+mei 02 12:02:41 VM1 gnome-session[1288]: /var/lib/dpkg/lock:
+mei 02 12:02:46 VM1 systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:02:46 VM1 systemd[1]: Starting Daily apt upgrade and clean activities...
+-- Subject: Unit apt-daily-upgrade.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apt-daily-upgrade.service has begun starting up.
+mei 02 12:02:50 VM1 dbus[697]: [0;1;39m[system] Activating service name='org.debian.apt' (using servicehelper)[0m
+mei 02 12:02:51 VM1 AptDaemon[2228]: INFO: Initializing daemon
+mei 02 12:02:51 VM1 org.debian.apt[697]: [0;1;39m12:02:51 AptDaemon [INFO]: Initializing daemon[0m
+mei 02 12:02:51 VM1 dbus[697]: [0;1;39m[system] Successfully activated service 'org.debian.apt'[0m
+mei 02 12:02:51 VM1 AptDaemon.PackageKit[2228]: INFO: Initializing PackageKit compat layer
+mei 02 12:02:51 VM1 org.debian.apt[697]: [0;1;39m/usr/lib/python3/dist-packages/aptdaemon/worker/pkworker.py:35: PyGIWarning: PackageKitGlib was imported without specifying a version first. Use gi.require_version('PackageKitGlib', '1.0') before import to ensure that the right version gets loaded.[0m
+mei 02 12:02:51 VM1 org.debian.apt[697]: [0;1;39m  from gi.repository import PackageKitGlib as pk[0m
+mei 02 12:02:51 VM1 org.debian.apt[697]: [0;1;39m12:02:51 AptDaemon.PackageKit [INFO]: Initializing PackageKit compat layer[0m
+mei 02 12:02:51 VM1 AptDaemon[2228]: INFO: UpdateCache() was called
+mei 02 12:02:51 VM1 org.debian.apt[697]: [0;1;39m12:02:51 AptDaemon [INFO]: UpdateCache() was called[0m
+mei 02 12:02:51 VM1 AptDaemon.Trans[2228]: INFO: Queuing transaction /org/debian/apt/transaction/fcb9c1e570704a878fdd2aa374c10d03
+mei 02 12:02:51 VM1 org.debian.apt[697]: [0;1;39m12:02:51 AptDaemon.Trans [INFO]: Queuing transaction /org/debian/apt/transaction/fcb9c1e570704a878fdd2aa374c10d03[0m
+mei 02 12:02:51 VM1 AptDaemon.Worker[2228]: INFO: Simulating trans: /org/debian/apt/transaction/fcb9c1e570704a878fdd2aa374c10d03
+mei 02 12:02:51 VM1 org.debian.apt[697]: [0;1;39m12:02:51 AptDaemon.Worker [INFO]: Simulating trans: /org/debian/apt/transaction/fcb9c1e570704a878fdd2aa374c10d03[0m
+mei 02 12:02:51 VM1 AptDaemon.Worker[2228]: INFO: Processing transaction /org/debian/apt/transaction/fcb9c1e570704a878fdd2aa374c10d03
+mei 02 12:02:51 VM1 org.debian.apt[697]: [0;1;39m12:02:51 AptDaemon.Worker [INFO]: Processing transaction /org/debian/apt/transaction/fcb9c1e570704a878fdd2aa374c10d03[0m
+mei 02 12:03:16 VM1 AptDaemon.Worker[2228]: INFO: Updating cache
+mei 02 12:03:16 VM1 org.debian.apt[697]: [0;1;39m12:03:16 AptDaemon.Worker [INFO]: Updating cache[0m
+mei 02 12:03:19 VM1 systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: Unit apt-daily-upgrade.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apt-daily-upgrade.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:03:19 VM1 systemd[1]: Startup finished in 4.754s (kernel) + 1min 53.176s (userspace) = 1min 57.931s.
+-- Subject: System start-up is now complete
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- All system services necessary queued for starting at boot have been
+-- successfully started. Note that this does not mean that the machine is
+-- now idle as services might still be busy with completing start-up.
+-- 
+-- Kernel start-up required 4754902 microseconds.
+-- 
+-- Initial RAM disk start-up required INITRD_USEC microseconds.
+-- 
+-- Userspace start-up required 113176363 microseconds.
+mei 02 12:03:20 VM1 AptDaemon.Worker[2228]: INFO: Finished transaction /org/debian/apt/transaction/fcb9c1e570704a878fdd2aa374c10d03
+mei 02 12:03:20 VM1 org.debian.apt[697]: [0;1;39m12:03:20 AptDaemon.Worker [INFO]: Finished transaction /org/debian/apt/transaction/fcb9c1e570704a878fdd2aa374c10d03[0m
+mei 02 12:03:20 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+mei 02 12:03:30 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+mei 02 12:03:41 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+mei 02 12:03:51 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+mei 02 12:05:05 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+mei 02 12:05:16 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+mei 02 12:05:26 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+mei 02 12:05:36 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+mei 02 12:05:40 VM1 pkexec[3392]: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+mei 02 12:05:40 VM1 pkexec[3392]: pam_systemd(polkit-1:session): Cannot create session: Already running in a session
+mei 02 12:05:40 VM1 pkexec[3392]: [0;1;39mappie: Executing command [USER=root] [TTY=unknown] [CWD=/home/appie] [COMMAND=/usr/lib/update-notifier/package-system-locked][0m
+mei 02 12:06:29 VM1 anacron[739]: [0;1;39mJob `cron.daily' started[0m
+mei 02 12:06:29 VM1 anacron[3403]: [0;1;39mUpdated timestamp for job `cron.daily' to 2018-05-02[0m
+mei 02 12:06:29 VM1 cracklib[3429]: no dictionary update necessary.
+mei 02 12:06:30 VM1 systemd[1]: Stopping Make remote CUPS printers available locally...
+-- Subject: Unit cups-browsed.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups-browsed.service has begun shutting down.
+mei 02 12:06:30 VM1 systemd[1]: Stopped Make remote CUPS printers available locally.
+-- Subject: Unit cups-browsed.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups-browsed.service has finished shutting down.
+mei 02 12:06:30 VM1 systemd[1]: Stopping CUPS Scheduler...
+-- Subject: Unit cups.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has begun shutting down.
+mei 02 12:06:30 VM1 systemd[1]: Stopped CUPS Scheduler.
+-- Subject: Unit cups.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished shutting down.
+mei 02 12:06:30 VM1 systemd[1]: Stopped CUPS Scheduler.
+-- Subject: Unit cups.path has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.path has finished shutting down.
+mei 02 12:06:30 VM1 systemd[1]: Stopping CUPS Scheduler.
+-- Subject: Unit cups.path has begun shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.path has begun shutting down.
+mei 02 12:06:30 VM1 systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.path has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.path has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:06:30 VM1 systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:06:30 VM1 systemd[1]: Started Make remote CUPS printers available locally.
+-- Subject: Unit cups-browsed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups-browsed.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:06:34 VM1 anacron[739]: [0;1;39mJob `cron.daily' terminated[0m
+mei 02 12:07:55 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+mei 02 12:08:05 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+mei 02 12:08:09 VM1 gnome-session[1288]: Gtk-Message: GtkDialog mapped without a transient parent. This is discouraged.
+mei 02 12:08:15 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+mei 02 12:08:25 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+mei 02 12:11:29 VM1 anacron[739]: [0;1;39mJob `cron.weekly' started[0m
+mei 02 12:11:29 VM1 anacron[3678]: [0;1;39mUpdated timestamp for job `cron.weekly' to 2018-05-02[0m
+mei 02 12:11:32 VM1 anacron[739]: [0;1;39mJob `cron.weekly' terminated[0m
+mei 02 12:11:32 VM1 anacron[739]: [0;1;39mNormal exit (2 jobs run)[0m
+mei 02 12:12:52 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+mei 02 12:13:02 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+mei 02 12:13:12 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+mei 02 12:13:23 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+mei 02 12:13:51 VM1 AptDaemon[2228]: INFO: Quitting due to inactivity
+mei 02 12:13:51 VM1 org.debian.apt[697]: [0;1;39m12:13:51 AptDaemon [INFO]: Quitting due to inactivity[0m
+mei 02 12:13:51 VM1 org.debian.apt[697]: [0;1;39m12:13:51 AptDaemon [INFO]: Quitting was requested[0m
+mei 02 12:13:51 VM1 AptDaemon[2228]: INFO: Quitting was requested
+mei 02 12:16:14 VM1 compiz[1443]: gkr-pam: unlocked login keyring
+mei 02 12:16:29 VM1 systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: Unit systemd-tmpfiles-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-clean.service has begun starting up.
+mei 02 12:16:29 VM1 systemd-tmpfiles[3721]: [0;1;39m[/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.[0m
+mei 02 12:16:29 VM1 systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:17:01 VM1 CRON[3729]: pam_unix(cron:session): session opened for user root by (uid=0)
+mei 02 12:17:01 VM1 CRON[3730]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+mei 02 12:17:01 VM1 CRON[3729]: pam_unix(cron:session): session closed for user root
+mei 02 12:17:19 VM1 systemd[1]: Started Daemon for generating UUIDs.
+-- Subject: Unit uuidd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit uuidd.service has finished starting up.
+-- 
+-- The start-up result is done.
+mei 02 12:22:05 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+mei 02 12:22:15 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+mei 02 12:22:26 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+mei 02 12:22:36 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+mei 02 12:34:41 VM1 compiz[1443]: gkr-pam: unlocked login keyring
+mei 02 12:39:50 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+mei 02 12:39:54 VM1 gnome-session[1288]: Gtk-Message: GtkDialog mapped without a transient parent. This is discouraged.
+mei 02 12:40:01 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+mei 02 12:40:11 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+mei 02 12:40:21 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+mei 02 12:57:40 VM1 compiz[1443]: gkr-pam: unlocked login keyring
+mei 02 13:01:38 VM1 org.gnome.evolution.dataserver.Sources5[1110]: [0;1;39m** (evolution-source-registry:1453): WARNING **: secret_service_search_sync: must specify at least one attribute to match[0m
+mei 02 13:14:40 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+mei 02 13:14:50 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+mei 02 13:15:00 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+mei 02 13:15:10 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+mei 02 13:17:01 VM1 CRON[4448]: pam_unix(cron:session): session opened for user root by (uid=0)
+mei 02 13:17:01 VM1 CRON[4449]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+mei 02 13:17:01 VM1 CRON[4448]: pam_unix(cron:session): session closed for user root
+mei 02 13:31:21 VM1 compiz[1443]: gkr-pam: unlocked login keyring
+mei 02 13:43:31 VM1 sudo[4771]: [0;1;39m   appie : TTY=pts/17 ; PWD=/home/appie/wordpress-ansible/roles/wordpress/tasks ; USER=root ; COMMAND=/usr/bin/apt install vim[0m
+mei 02 13:43:31 VM1 sudo[4771]: pam_unix(sudo:session): session opened for user root by (uid=0)
+mei 02 13:43:47 VM1 sudo[4771]: pam_unix(sudo:session): session closed for user root
+mei 02 13:44:40 VM1 pkexec[5407]: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+mei 02 13:44:40 VM1 pkexec[5407]: pam_systemd(polkit-1:session): Cannot create session: Already running in a session
+mei 02 13:44:40 VM1 pkexec[5407]: [0;1;39mappie: Executing command [USER=root] [TTY=unknown] [CWD=/home/appie] [COMMAND=/usr/lib/update-notifier/package-system-locked][0m
+mei 02 13:49:29 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+mei 02 13:49:39 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+mei 02 13:49:49 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+mei 02 13:50:00 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+mei 02 14:17:01 VM1 CRON[6517]: pam_unix(cron:session): session opened for user root by (uid=0)
+mei 02 14:17:01 VM1 CRON[6518]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+mei 02 14:17:01 VM1 CRON[6517]: pam_unix(cron:session): session closed for user root
+mei 02 14:24:18 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+mei 02 14:24:28 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+mei 02 14:24:39 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+mei 02 14:24:49 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+mei 02 14:59:07 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+mei 02 14:59:18 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+mei 02 14:59:28 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+mei 02 14:59:38 VM1 systemd-timesyncd[302]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+mei 02 15:02:38 VM1 compiz[1443]: gkr-pam: unlocked login keyring
